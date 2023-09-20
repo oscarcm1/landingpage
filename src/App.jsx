@@ -1,12 +1,20 @@
 
 import './App.css'
+import About from './pages/About'
+import Me from './pages/Me'
+import Resume from './pages/Resume'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     
+      <div className='container'>
+        <Me />
+        <About />
+        <Resume />
+      </div>
+
+
     </>
   )
 }

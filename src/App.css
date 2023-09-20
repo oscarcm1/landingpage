@@ -1,4 +1,23 @@
+@font-face {
+  font-family: 'Conneqt-Black';
+  src: url('./assets/fonts/Conneqt/Conneqt-Black.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'Conneqt-Bold';
+  src: url('./assets/fonts/Conneqt/Conneqt-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Conneqt-Regular';
+  src: url('./assets/fonts/Conneqt/Conneqt-Regular.ttf') format('truetype');
+}
+
+
+
 * {
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,5 +30,34 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* Variables Globales */
+#root {
+  /* colores */
+  --color-secundary: rgb(129, 254, 136);
+}
+
+.container {
+  position: relative;
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.box {
+  position: relative;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
 }

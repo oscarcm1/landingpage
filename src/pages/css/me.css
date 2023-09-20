@@ -1,0 +1,125 @@
+.me {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 0% 20% ;
+   background-image: url("../../assets/bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+  
+  }
+  
+  .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .name h1 {
+    font-weight: 100;
+    width: 100%;
+    text-align: justify;
+    font-size: 2rem;
+    color: white;
+    font-family: Conneqt-Bold;
+    text-transform: uppercase;
+  
+  }
+  .name h2 {
+    font-weight: bold;
+    width: 100%;
+    text-align: justify;
+    font-size: 4rem;
+    color: white;
+    font-family: Conneqt-Black;
+    text-transform: uppercase;
+  }
+  .name p {
+    font-weight: 100;
+    width: 100%;
+    text-align: justify;
+    color: white;
+    font-family: Conneqt-Regular;
+    text-transform: uppercase;
+  }
+  
+  
+  .button-me{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .button-me a{
+      margin: 20px;
+      background-color: rgba(240, 248, 255, 0);
+      padding: 5px 20px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      border: 1px solid var( --color-secundary);
+      cursor: pointer;
+      font-family: Conneqt-Regular;
+  }
+  .button-me a:hover{
+      background-color: white;
+      color: black;
+  }
+  
+  
+  @media (max-width: 960px) {
+  
+  
+    .me {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+     padding: 0px;
+  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+    }
+  
+    .name{
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.102);
+      backdrop-filter: blur(2px);
+      padding: 0px ;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      width: 90%;
+      padding: 60px 0px;
+  }
+  
+  .button-me a{
+    margin: 20px 10px;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 5px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid var( --color-secundary);
+    cursor: pointer;
+    font-family: Conneqt-Regular;
+  }
+  }
+  

@@ -70,10 +70,10 @@ function Resume() {
                 <div className='aditional'>
                     <h2>  Languages</h2>
                     <div className='languages'>
-                        <div>
+                        <div className='language'>
                         <p>Spanish</p> <input readOnly type="range" id="illustrator" name="react" min="0" max="100" value={"100"} />
                         </div>
-                        <div>
+                        <div className='language'>
                         <p>English</p> <input readOnly type="range" id="illustrator" name="react" min="0" max="100" value={"50"} />
                         </div>
                     </div>

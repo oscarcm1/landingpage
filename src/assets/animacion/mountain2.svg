@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Mountain2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1280px" height="720px" viewBox="0 0 1280 720" enable-background="new 0 0 1280 720" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="52.0483" y1="726.6475" x2="52.0483" y2="206.1802" gradientTransform="matrix(-1 0 0 1 1280 0)">
+		<stop  offset="0" style="stop-color:#3789DE"/>
+		<stop  offset="0.1931" style="stop-color:#3880D7"/>
+		<stop  offset="0.5147" style="stop-color:#3C66C5"/>
+		<stop  offset="0.9232" style="stop-color:#413DA7"/>
+		<stop  offset="1" style="stop-color:#4234A1"/>
+	</linearGradient>
+	<path fill="url(#SVGID_1_)" d="M1752.498,705.966L1423.381,206.18L1131.51,391.195l-111.057,49.354l-49.318,4.899l-44.457-5.192
+		l-90.654,47.667l-20.936,11.009c0,0-95.113,224.352-111.496,227.436C687.207,729.45,1752.498,705.966,1752.498,705.966z"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="522.478" y1="953.2432" x2="525.0458" y2="-383.029" gradientTransform="matrix(0.9501 0.0018 0.0018 0.9999 -26.159 -1.5005)">
+		<stop  offset="0" style="stop-color:#2C6CAE"/>
+		<stop  offset="0.2005" style="stop-color:#2C64AA"/>
+		<stop  offset="0.5037" style="stop-color:#2D509F"/>
+		<stop  offset="0.8701" style="stop-color:#2E2E8D"/>
+		<stop  offset="1" style="stop-color:#2E2086"/>
+	</linearGradient>
+	<path fill="url(#SVGID_2_)" d="M-78.413,636.334l75.114-57.346l30.27,5.715l33.438-4.325l74.866-48.029L331.39,350.836
+		l764.097,348.317c0,0-1258.058,166.088-1246.965,163.2C-140.385,859.465-78.413,636.334-78.413,636.334z"/>
+	<polygon opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" fill="#96A2D9" points="799.477,629.438 1272.84,648.997 
+		1424.52,524.233 1477.121,537.7 1364.578,371.344 1349.9,302.853 1423.381,206.18 1131.51,391.195 1020.453,440.55 
+		971.135,445.449 926.678,440.257 836.023,487.924 	"/>
+	<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#BAC0FD" points="1423.381,206.18 1131.51,391.195 1020.453,440.55 
+		971.135,445.449 926.678,440.257 885.104,461.858 926.537,438.465 971.643,443.663 1019.805,438.771 1129.734,386.021 	"/>
+</g>
+</svg>

@@ -1,12 +1,14 @@
 
 import './App.css'
+import Mountain from './pages/Mountain'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     
+
+      <Mountain />
+
     </>
   )
 }

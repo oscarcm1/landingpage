@@ -1,0 +1,23 @@
+.socios{
+    position: relative;
+    width: 100%;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.socios img{
+    width: auto;
+    height: 40px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.socios img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}  

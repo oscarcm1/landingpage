@@ -31,12 +31,13 @@ span.list-categories {
   height: 50px;
   width: 200px;
   gap: 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.511);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  background-color: white;
 }
 
 .list p {

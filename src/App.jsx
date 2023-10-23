@@ -1,8 +1,10 @@
 
 import './App.css'
+import Ads from './pages/ads/Ads'
 import Categories from './pages/categories/Categories'
 import Choose from './pages/choose/Choose'
 import Menu from './pages/menu/Menu'
+import Saying from './pages/saying/Saying'
 import Slider from './pages/slider/Slider'
 import Socios from './pages/socios/Socios'
 
@@ -19,6 +21,8 @@ function App() {
      <Socios/>
      <Categories/>
      <Choose/>
+     <Saying/>
+     <Ads/>
 
     </div>
   )

@@ -22,7 +22,6 @@ section.categories h2 {
   justify-content: space-between;
   gap: 40px;
   overflow: hidden;
-  overflow-x: scroll;
 }
 
 span.list-categories {

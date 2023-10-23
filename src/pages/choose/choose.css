@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    background-color: rgb(191, 191, 196);
     display: flex;
 
 }
@@ -15,7 +14,6 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    background-color: aliceblue;
     padding: 80px;
 }
 .s1 h2{
@@ -30,13 +28,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: aliceblue;
     padding: 0px 80px;
 
 }
 .s2 article{
     width: 50%;
-    background-color: aliceblue;
     padding: 40px;
     display: flex;
     flex-direction: column;

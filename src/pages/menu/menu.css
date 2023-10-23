@@ -10,7 +10,9 @@ body {
     rgba(203, 224, 252, 1) 100%
   );
   width: 100%;
-  height: auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+
 }
 
 nav.menu {

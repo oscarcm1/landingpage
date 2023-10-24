@@ -7,7 +7,6 @@
   align-items: center;
   flex-direction: column;
   padding: 0px 80px;
-
 }
 
 .slider {
@@ -55,21 +54,34 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.207);
+  cursor: pointer;
 }
 
 button.buy {
   background-color: var(--color-principal);
   color: white;
 }
+button.buy:hover {
+  background-color: var(--color-principal);
+  color: white;
+  font-weight: bold;
+
+}
 button.play {
   background-color: white;
   color: black;
 }
+button.play:hover {
+  background-color: var(--color-principal);
+  color: white;
+  font-weight: bold;
+}
+
 
 .picture-slider {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,13 +92,64 @@ button.play {
 }
 
 .info {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.info p {
-  font-size: 2rem;
-  color: rgb(87, 87, 87);
+p.info {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+
+@media (max-width: 960px) {
+
+
+  .box-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0px 0px;
+  }
+
+
+  .info-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0px 40px;
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  
+  .picture-slider  {
+    object-fit: cover;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  .info { 
+    width: 100%;
+    height: 100px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
 }

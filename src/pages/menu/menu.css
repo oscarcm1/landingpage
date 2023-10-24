@@ -12,7 +12,6 @@ body {
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
-
 }
 
 nav.menu {
@@ -60,4 +59,14 @@ ul.menu-item {
 a.color {
   background-color: #0597f2;
   color: white;
+}
+
+
+@media (max-width: 960px) {
+
+
+.menu a{
+  display: none;
+}
+
 }

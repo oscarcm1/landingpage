@@ -1,60 +1,81 @@
-.footer{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.footer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-span.social-media{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+span.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.menu-footer{
+.menu-footer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-footer h2 {
+  font-size: 1.3rem;
+}
+
+.menu-footer li {
+  padding: 10px;
+}
+
+.menu-footer ol {
+  list-style: none;
+}
+
+.menu-footer input {
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.menu-footer button {
+  background: var(--color-principal);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 960px) {
+  .footer {
     position: relative;
-    width: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+  }
+
+  .menu-footer {
+    position: relative;
+    width: 100%;
     height: 200px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
-}
-.menu-footer h2{
-    font-size: 1.3rem;
-}
-
-
-.menu-footer li{
-    padding: 10px;
-}
-
-.menu-footer ol{
-    list-style: none;
-}
-
-.menu-footer input{
-    border: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-}
-
-.menu-footer button{
-    background: var(--color-principal);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }

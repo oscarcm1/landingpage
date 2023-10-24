@@ -7,7 +7,6 @@ function Slider() {
         <div className='box-slider'>
 
             <div className='slider'>
-
                 <div className='info-slider'>
                     <span>Conoce la plataforma</span>
                     <h1>Invest in knowledge and your future!</h1>
@@ -25,10 +24,7 @@ function Slider() {
             <p className='info'>3000 companies colaborate with us
                 to build succesfull carreer for our students
             </p>
-
-
-
-
+            
         </div>
     )
 }

@@ -38,3 +38,46 @@
     position: absolute;
     width: 400px;
 }
+
+@media (max-width: 960px) {
+  .saying {
+    position: relative;
+    width: 100%;
+    height:auto;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .saying article {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    gap: 40px;
+  }
+  
+  .picture{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .picture img{
+    position: relative;
+    width: 100%;
+}
+  
+.saying h3 {
+  font-size: 3rem;
+  width: 100%;
+}
+.saying p {
+  line-height: 40px;
+  width: 100%;
+}
+}

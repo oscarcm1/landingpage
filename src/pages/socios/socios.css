@@ -30,8 +30,8 @@
     justify-content: start;
     align-items: center;
     gap: 20px;
-    overflow: visible;
-    overflow-y: scroll;
+    overflow: hidden;
+    overflow-x: scroll;
     padding: 40px 80px;
     background-color: aliceblue;
 

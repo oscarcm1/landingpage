@@ -1,0 +1,97 @@
+.box{
+    position: relative;
+    width:calc(100% - var(--menu-full));
+    height: auto;
+    margin-left: var(--menu-full);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    background-color: #1D2240;
+    flex-wrap: wrap;
+}
+
+.box.active{
+    position: relative;
+    width: calc(100% - var(--menu-small));
+    height:auto;
+    margin-left: var(--menu-small);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    background-color: #1D2240;
+}
+
+.dashboard{
+    position: relative;
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: masonry;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.graphics{
+    position: relative;
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.252);
+    border: 1px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #2D3359;
+    scale: .9;
+}
+
+
+
+
+    
+
+/* Main CSS */
+.card-grid > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-grid > div > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.card-grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 300px;
+	grid-auto-flow: dense;
+}
+.card-grid .wide {
+	grid-column: span 2;
+    background-color: white;
+}
+.card-grid .tall {
+	grid-row: span 2;
+    background-color: bisque;
+}
+.card-grid .big {
+	grid-column: span 2;
+	grid-row: span 2;
+    background-color: #e2e6fc;
+}
+

@@ -7,6 +7,8 @@
   align-items: center;
   flex-direction: column;
   padding: 0px 80px;
+  animation: up 2s  ;
+  -webkit-animation: up 2s  ;
 }
 
 .slider {
@@ -30,11 +32,13 @@
   gap: 40px;
 }
 .info-slider span {
-  color: coral;
+  color: white;
   font-size: 1rem;
+  font-weight: bold;
 }
 .info-slider h1 {
   font-size: 3rem;
+  color: white;
 }
 
 .actions {
@@ -47,7 +51,7 @@
 }
 .actions button {
   border: none;
-  padding: 20px 40px;
+  padding: 10px 20px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -55,6 +59,14 @@
   -o-border-radius: 10px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.207);
   cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.actions button:hover {
+  border: 1px solid black;
 }
 
 button.buy {
@@ -65,7 +77,6 @@ button.buy:hover {
   background-color: var(--color-principal);
   color: white;
   font-weight: bold;
-
 }
 button.play {
   background-color: white;
@@ -77,7 +88,6 @@ button.play:hover {
   font-weight: bold;
 }
 
-
 .picture-slider {
   position: relative;
   width: 100%;
@@ -88,7 +98,13 @@ button.play:hover {
 }
 
 .picture-slider img {
-  width: 100%;
+  width: 60%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.18);
 }
 
 .info {
@@ -100,21 +116,17 @@ button.play:hover {
 
 p.info {
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(211, 211, 211);
   font-weight: bold;
 }
 
-
 @media (max-width: 960px) {
-
-
   .box-slider {
     position: relative;
     width: 100%;
     height: auto;
     padding: 0px 0px;
   }
-
 
   .info-slider {
     position: relative;
@@ -135,14 +147,14 @@ p.info {
     flex-direction: column-reverse;
     height: auto;
   }
-  
-  .picture-slider  {
+
+  .picture-slider {
     object-fit: cover;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .info { 
+  .info {
     width: 100%;
     height: 100px;
     padding: 0px 40px;
@@ -150,6 +162,14 @@ p.info {
     justify-content: center;
     align-items: center;
   }
+}
 
-  
+@keyframes up {
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: 0;
+  }
 }

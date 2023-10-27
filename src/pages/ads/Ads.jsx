@@ -3,7 +3,7 @@ import "./ads.css"
 
 function Ads() {
     return (
-        <section className='ads'>
+        <section className='ads   reveal fade-right'>
             <aside >
                 <div className='circle'></div>
                 <h4>Are you ready to start your course now!</h4>

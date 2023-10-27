@@ -3,7 +3,7 @@ import "./choose.css"
 
 function Choose() {
     return (
-        <section className='choose'>
+        <section className='choose  reveal fade-left'>
 
             <section className='s1'>
                 <h2>Why Choose E-Learning</h2>

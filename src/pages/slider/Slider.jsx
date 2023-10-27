@@ -1,10 +1,9 @@
 import React from 'react'
 import "./slider.css"
-import Model from "../../assets/model.png"
 
 function Slider() {
     return (
-        <div className='box-slider'>
+        <div className='box-slider'  >
 
             <div className='slider'>
                 <div className='info-slider'>
@@ -12,13 +11,14 @@ function Slider() {
                     <h1>Invest in knowledge and your future!</h1>
 
                     <div className='actions'>
-                        <button className='buy'>Buy Now</button>
-                        <button className='play'>Play Video</button>
+                        <button className='buy'>   <i className="bi bi-cart-check-fill"></i> <p>Buy Now</p></button>
+                        <button className='play'>  <i className="bi bi-play-fill"></i> <p>Play Video</p></button>
                     </div>
                 </div>
                 
-                <img className='picture-slider' src={Model} />
-
+                <div className='picture-slider'>
+                <img src="https://img.freepik.com/psd-gratis/3d-mujer-sentada-libros-leyendo_23-2149485779.jpg?w=740&t=st=1698436257~exp=1698436857~hmac=d427783659d51773dc5574e4563b7f6ec4833fc2f1c5cec37eb928999574482e"/>
+                </div>
             </div>
 
             <p className='info'>3000 companies colaborate with us

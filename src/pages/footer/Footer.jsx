@@ -40,8 +40,8 @@ function Footer() {
 
             <div className='menu-footer'>
                 <h2>Last news</h2>
-                  <input />
-                  <button>Sucribe</button>
+                  <input placeholder='Search..' />
+                  <button>Suscribe</button>
             </div>
 
 

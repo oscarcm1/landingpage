@@ -10,19 +10,19 @@ function Categories() {
             <div className='list'>
                 <span className='list-categories'>
                     <i className="bi bi-easel-fill"></i>
-                    <p>Design</p>
+                    <a href=''>Design</a>
                 </span>
                 <span className='list-categories'>
                     <i className="bi bi-file-earmark-code-fill"></i>
-                    <p>Development</p>
+                    <a href=''>Development</a>
                 </span>
                 <span className='list-categories'>
-                    <i className="bi bi-headset-vr"></i>
-                    <p>Marketing</p>
+                    <i className="bi bi-bar-chart-fill"></i>
+                    <a href=''>Marketing</a>
                 </span>
                 <span className='list-categories'>
                     <i className="bi bi-cloud-check-fill"></i>
-                    <p>IT & Software</p>
+                    <a href=''>IT & Software</a>
                 </span>
             </div>
             

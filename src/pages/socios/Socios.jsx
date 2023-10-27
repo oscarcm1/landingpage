@@ -10,7 +10,7 @@ import Facebook from "../../assets/socios/facebook.png"
 
 function Socios() {
   return (
-    <section className='socios'>
+    <section className='socios   reveal fade-bottom'>
         <img  src={Duolingo} alt=''/>
         <img  src={Khan}     alt=''/>
         <img  src={Udemy}    alt=''/>

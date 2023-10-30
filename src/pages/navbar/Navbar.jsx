@@ -2,19 +2,17 @@ import React from 'react'
 import "./navbar.css"
 import { Icon } from '@iconify/react';
 import Astronaut from "../../assets/astronaut.png"
+import Astronaut2 from "../../assets/astronaut2.png"
+import Helmet from "../../assets/helmet.png"
 
 function Navbar() {
     return (
 
         <div className='background'>
-
-
-
         <section className='header'>
 
             <nav className='navbar'>
                 <h1>Logo</h1>
-
                 <ul className='items'>
                     <li><a>Home</a></li>
                     <li><a>Features</a></li>
@@ -24,10 +22,9 @@ function Navbar() {
                 </ul>
             </nav>
 
-
             <section className='slider'>
 
-                <div className='picture'><img  src={Astronaut}/></div>
+                 <div className='picture'><img  src={Astronaut}/></div> 
 
                 <article>
                     <h1> Space shuttle</h1>
@@ -93,30 +90,41 @@ function Navbar() {
                         <p>Lorem ipsum dolor sit amet. Eum nobis dolores eos nobis voluptas ab perferendis</p>
                     </article>
                 </div>
-
-
-
-
-
-
-
-
-
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
+
+        <section className='gallery'>
+            <div className='picture'>
+              <img  src={Astronaut2}/>
+            </div>
+           
+            <article>
+                <h3>Look our gallery</h3>
+                <p>Lorem ipsum dolor sit amet. At libero accusamus et quia sunt et obcaecati nesciunt est omnis omnis 33 voluptas ipsum. Eum maxime quas aut earum inventore nam aperiam voluptatem qui labore odio et internos consequatur. Rem numquam perspiciatis aut galisum internos vel libero rerum id perspiciatis magni. Est repudiandae sapiente aut alias assumenda aut ratione alias sed dolorem recusandae.</p>
+            </article>
+        </section>
+
+        <section className='gallery bg'>
+            <div className='opacity'>
+            <article>
+                <h3>What we think?</h3>
+                <p>Lorem ipsum dolor sit amet. At libero accusamus et quia sunt et obcaecati nesciunt est omnis omnis 33 voluptas ipsum. Eum maxime quas aut earum inventore nam aperiam voluptatem qui labore odio et internos consequatur. Rem numquam perspiciatis aut galisum internos vel libero rerum id perspiciatis magni. Est repudiandae sapiente aut alias assumenda aut ratione alias sed dolorem recusandae.</p>
+                <p>Lorem ipsum dolor sit amet. At libero accusamus et quia sunt et obcaecati nesciunt est omnis omnis 33 voluptas ipsum. Eum maxime quas aut earum inventore nam aperiam voluptatem qui labore odio et internos consequatur. Rem numquam perspiciatis aut galisum internos vel libero rerum id perspiciatis magni. Est repudiandae sapiente aut alias assumenda aut ratione alias sed dolorem recusandae.</p>
+            </article>
+
+            <div className='picture'>
+            <img  src={Helmet}/>
+            </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
 
 
         </div>

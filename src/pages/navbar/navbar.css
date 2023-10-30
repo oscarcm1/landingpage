@@ -1,13 +1,14 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 :root {
-  --color-principal: purple;
+  --color-principal: #c97ede;
+  --color-text: #c8b8d5;
 }
 
 body {
   width: 100%;
   height: 100vh;
-  background-color: purple;
+  background-color: #3a315c;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -82,7 +83,7 @@ ul.items {
 }
 
 .slider h1 {
-  color: rgb(210, 96, 210);
+  color: var(--color-principal);
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -94,7 +95,7 @@ ul.items {
 }
 
 .slider p {
-  color: rgb(232, 232, 232);
+  color: var(--color-text);
   line-height: 1.3rem;
 }
 
@@ -149,7 +150,7 @@ span.icon:last-child {
 }
 
 .item-feature h3 {
-  color: rgb(209, 128, 236);
+  color: var(--color-principal);
   text-transform: uppercase;
 }
 
@@ -158,5 +159,61 @@ span.icon:last-child {
   text-transform: uppercase;
 }
 .item-feature p {
-  color: rgb(233, 233, 233);
+  color: var(--color-text);
+}
+
+.opacity {
+  position: relative;
+  background-color: #3a315ce8;
+  display: flex;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #3a315c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.gallery.bg {
+  background-color: rgba(132, 0, 255, 0.289);
+  background-image: url("../../assets/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picture{
+  width: 100%;
+}
+
+.opacity{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a315ce8;
+
+}
+
+
+.gallery article {
+  width: 100%;
+  line-height: 40px;
+  padding: 40px;
+
+}
+
+.gallery h3 {
+  color: var(--color-principal);
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgb(218, 80, 225), 0 0 10px rgba(252, 203, 255, 0.179);
+  padding: 40px 0px;
+}
+.gallery p {
+  color: var(--color-text);
 }

@@ -1,0 +1,139 @@
+/*===================Tipografía Corporativa Delfos 369==========================*/
+@font-face {
+  font-family: "Hallowen";
+  src: url("../font/hallowen.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --color-principal: orange;
+}
+
+.hallowen {
+  font-family: Hallowen;
+}
+.video {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.video video {
+  width: 100%;
+  height:100vh;
+  z-index: 0;
+  object-fit: cover;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.446);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  color: white;
+}
+
+ul.items {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.items a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.502);
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+}
+
+.info article {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info h1 {
+  font-size: 3rem;
+  color: var(--color-principal);
+  text-shadow: 0 0 0px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1)  ;
+}
+.info h2 {
+  color: white;
+}
+.info p {
+  color: rgb(208, 208, 208);
+}
+
+.info button {
+  background-color: var(--color-principal);
+  color: black;
+  padding: 10px 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow:0 0 0px rgb(199, 84, 34) , 0 0 10px rgb(255, 171, 68)   ;
+  cursor: pointer;
+}
+
+.ghost{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.ghost img{
+    position: absolute;
+    left: 0;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    animation:  animation1 4s infinite ;
+    -webkit-animation:  animation1 4s infinite ;
+}
+
+
+@keyframes animation1 {
+
+    0%{
+    margin-left: 0%;
+    opacity: 0;
+    }
+
+
+
+    100%{
+        margin-left: 100%;
+        opacity: 1;
+    }
+    
+}

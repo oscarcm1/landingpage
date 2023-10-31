@@ -120,6 +120,57 @@ function Navbar() {
 
 
 
+        <section className='count'>
+
+            <span className=''>
+                <p className='number'>7890</p>
+                <p>Coffee cups</p>
+            </span>
+            <span className=''>
+                <p  className='number'>1 M</p>
+                <p>sUBSCRIBERS</p>
+            </span>
+            <span className=''>
+                <p  className='number'>1509</p>
+                <p>Customers</p>
+            </span>
+            <span className=''>
+                <p  className='number'>5972</p>
+                <p>purchases</p>
+            </span>
+        </section>
+
+
+
+
+
+
+
+    <section className='contact'>
+      <div className='bg-contact'>
+        <section className='card-contact'>
+            <h4>Contact</h4>
+            <section className='box-info'>
+
+                <div className='adress'>
+                  <h5>Narra Gallery</h5>
+                  <p>311 harrison street, san francisco, ca, 978000</p> 
+                  <p>9364-2781-359</p>
+                  <p>company@gmail.com</p>
+                </div>
+                <div className='bg3'>  </div>
+            </section>         
+        </section>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
 
 
 

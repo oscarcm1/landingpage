@@ -1,0 +1,43 @@
+.bg {
+  position: relative;
+  background-color: rgb(152, 152, 152);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cubo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: white;
+}
+
+
+.cubo:hover{
+    animation: animacion1  4s infinite alternate  ;
+   -webkit-animation: animacion1  4s infinite alternate  ;
+
+}
+
+@keyframes animacion1 {
+  from {
+    background-color: blueviolet;
+    margin-left: 0px;
+    opacity: 1;
+  }
+
+  to {
+    background-color: aquamarine;
+    margin-left: 900px;
+    opacity: .2;
+
+  }
+}

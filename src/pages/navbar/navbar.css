@@ -15,24 +15,21 @@ body {
 .background {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: rgba(132, 0, 255, 0.289);
-  background-image: url("../../assets/bg.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: contain;
 }
 .header {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #3a315ce8;
+  background-image: url("../../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
   position: relative;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   height: 60px;
   display: flex;
@@ -43,12 +40,29 @@ body {
 
 ul.items {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   list-style: none;
 }
 
 .items a {
   text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: .8rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.items a:hover{
+  background-color: var(--color-principal);
+}
+
+a.color{
+  background-color: var(--color-principal);
 }
 
 .slider {
@@ -60,7 +74,6 @@ ul.items {
   align-items: center;
   padding: 0px 80px;
 }
-
 .picture {
   width: 50%;
   height: 100%;
@@ -68,14 +81,27 @@ ul.items {
   justify-content: center;
   align-items: center;
 }
-
 .picture img {
-  width: 70%;
+  width: 50%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.picture img:hover{
+ width: 60%;
+ transition: 1s;
+ -webkit-transition: 1s;
+ -moz-transition: 1s;
+ -ms-transition: 1s;
+ -o-transition: 1s;
 }
 
 .slider article {
   width: 50%;
-  padding: 40px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -99,20 +125,47 @@ ul.items {
 }
 
 .feature {
-  width: 100%;
+  width: calc(100% );
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
 }
 
 .item-feature {
-  width: 33%;
+  width: calc(30%);
   flex-grow: 1;
   padding: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: rgba(255, 255, 255, 0.0);
+  border: 1px solid rgba(255, 255, 255, 0.281);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  scale: .9;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.item-feature:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  scale: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 span.icon {
@@ -161,17 +214,12 @@ span.icon:last-child {
   color: var(--color-text);
 }
 
-.opacity {
-  position: relative;
-  background-color: #3a315ce8;
-  display: flex;
-}
 
 .gallery {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #3a315c;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +265,7 @@ span.icon:last-child {
 .count {
   position: relative;
   width: 100%;
-  background-color: #3a315c;
+  background-color: #000000;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -254,7 +302,7 @@ p.number {
   color: var(--color-text);
   width: 600px;
   height: 200px;
-  background-color: rgba(23, 1, 31, 0);
+  background-color: rgba(252, 252, 252, 0.089);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -286,8 +334,15 @@ p.number {
 }
 
 .bg3{
-  background-color: black;
-  width: 50%;
+   background-color: rgb(88, 67, 67);
+   width: 50%;
+   background-image:url("https://img.freepik.com/foto-gratis/fondo-campo-estrellas-resplandecientes-obra-maestra-cosmica-generada-ia_188544-9649.jpg?w=826&t=st=1698739335~exp=1698739935~hmac=3115faf79968a3fc89b9d6f5d05004a3330ad712cbfb07d7625654bec19abe94");
+   background-size: cover;
+   border-radius:10px ;
+   -webkit-border-radius:10px ;
+   -moz-border-radius:10px ;
+   -ms-border-radius:10px ;
+   -o-border-radius:10px ;
 }
 .bg-contact{
   position: relative;
@@ -297,4 +352,16 @@ p.number {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+
+article:hover{
+  background-color: rgba(0, 0, 0, 0.349);
+  border: 10px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }

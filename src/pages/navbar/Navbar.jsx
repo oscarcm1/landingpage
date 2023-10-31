@@ -18,7 +18,7 @@ function Navbar() {
                     <li><a>Features</a></li>
                     <li><a>Gallery</a></li>
                     <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a className='color'>Contact</a></li>
                 </ul>
             </nav>
 
@@ -105,7 +105,7 @@ function Navbar() {
         </section>
 
         <section className='gallery bg'>
-            <div className='opacity'>
+
             <article>
                 <h3>What we think?</h3>
                 <p>Lorem ipsum dolor sit amet. At libero accusamus et quia sunt et obcaecati nesciunt est omnis omnis 33 voluptas ipsum. Eum maxime quas aut earum inventore nam aperiam voluptatem qui labore odio et internos consequatur. Rem numquam perspiciatis aut galisum internos vel libero rerum id perspiciatis magni. Est repudiandae sapiente aut alias assumenda aut ratione alias sed dolorem recusandae.</p>
@@ -114,7 +114,6 @@ function Navbar() {
 
             <div className='picture'>
             <img  src={Helmet}/>
-            </div>
             </div>
         </section>
 
@@ -147,11 +146,9 @@ function Navbar() {
 
 
     <section className='contact'>
-      <div className='bg-contact'>
         <section className='card-contact'>
             <h4>Contact</h4>
             <section className='box-info'>
-
                 <div className='adress'>
                   <h5>Narra Gallery</h5>
                   <p>311 harrison street, san francisco, ca, 978000</p> 
@@ -161,7 +158,6 @@ function Navbar() {
                 <div className='bg3'>  </div>
             </section>         
         </section>
-        </div>
     </section>
 
 

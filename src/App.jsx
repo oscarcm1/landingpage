@@ -1,17 +1,16 @@
 
 import './App.css'
-import About from './pages/About'
-import Me from './pages/Me'
-import Resume from './pages/Resume'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Example from './pages/Example'
+import Slider from './pages/Slider';
+import Cards from './pages/Cards';
 
 function App() {
 
   return (
     <>
-      <div className='container'>
-        <Me />
-        <About />
-        <Resume />
+      <div className=''>
+        <Cards/>
       </div>
 
 

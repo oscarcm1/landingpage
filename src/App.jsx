@@ -1,16 +1,19 @@
 
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Example from './pages/Example'
-import Slider from './pages/Slider';
-import Cards from './pages/Cards';
+import Menu from './shared/header/Menu';
+import Slider from './shared/sidebar/Slider';
+import Slider2 from './shared/sidebar/Slider2';
+
 
 function App() {
 
   return (
     <>
       <div className=''>
-        <Cards/>
+
+        <Menu/>
+        <Slider/>
+        <Slider2/>
       </div>
 
 

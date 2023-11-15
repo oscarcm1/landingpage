@@ -30,7 +30,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   color: white;
 }
 
@@ -38,22 +38,11 @@ html {
 #root {
   /* colores */
   --color-secundary: rgb(129, 254, 136);
-}
 
-.container {
-  position: relative;
-  max-height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
-  z-index: 1;
-  overflow-x: hidden;
-}
-.box {
-  position: relative;
-  height: 100%;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+
+
+  --green: #75d96a;
+  --red: #e74683;
 }
 
 

@@ -1,0 +1,74 @@
+.slider-ads {
+  width: 100%;
+  position: relative;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  flex-direction: row;
+  white-space: nowrap;
+  animation: sc 12s linear infinite;
+  -webkit-animation: sc 12s linear infinite;
+
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-track {
+  position: relative;
+  height: 60px;
+  display: flex;
+  width: 100%;
+}
+.slider-track p {
+  background-color: var(--green);
+  color: black;
+  width: 600px;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+
+
+@keyframes sc {
+  from {
+    transform: translateX(-600px);
+    -webkit-transform: translateX(-600px);
+    -moz-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    -o-transform: translateX(-600px);
+}
+  to {
+    transform: translateX(calc(400px));
+    -webkit-transform: translateX(calc(400px));
+    -moz-transform: translateX(calc(400px));
+    -ms-transform: translateX(calc(400px));
+    -o-transform: translateX(calc(400px));
+}
+}
+
+.sli {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 40px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  gap: 40px;
+  overflow: hidden;
+  background-color: aliceblue;
+  border: none;
+}
+
+.sli img {
+  width: 100%;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}

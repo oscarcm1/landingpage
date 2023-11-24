@@ -11,5 +11,67 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(141, 140, 140);
+}
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+  background-image: url("https://images.pexels.com/photos/1276518/pexels-photo-1276518.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+:root {
+  --size: 10;
+  --width-img: 200px;
+}
+.box {
+  position: relative;
+  width: auto;
+  height: 200px;
+  display: inline-flex;
+  background-color: rgba(240, 248, 255, 0.61);
+  border: 1px solid black;
+  animation: slide 10s infinite linear;
+  -webkit-animation: slide 10s infinite linear;
+  transition: all ease-out 0.5s;
+  gap: 20px;
+}
+
+.box:hover{
+  animation-play-state: paused;
+}
+
+
+.card {
+  width: var(--width-img);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  flex: 0 0 auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(calc(-200px * var(--size)));
+    -webkit-transform: translateX(calc(-200px * var(--size)));
+    -moz-transform: translateX(calc(-200px * var(--size)));
+    -ms-transform: translateX(calc(-200px * var(--size)));
+    -o-transform: translateX(calc(-200px * var(--size)));
+  }
 }

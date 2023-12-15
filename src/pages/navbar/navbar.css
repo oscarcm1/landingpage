@@ -1,0 +1,60 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 100px;
+  color: var(--color-principal);
+  z-index: 10;
+  font-family: Louis-Bold;
+}
+.menu h1 {
+  color: white;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+}
+
+.list li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn a {
+  color: var(--color-principal);
+  text-decoration: underline;
+}
+
+.list a {
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.list a:hover {
+  background-color: var(--color-principal);
+}
+
+a.color {
+  background-color: var(--color-principal);
+}
+
+
+
+@media only screen and (max-width: 960px) {
+.menu{
+  display: none;
+}
+}

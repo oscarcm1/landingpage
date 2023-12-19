@@ -31,15 +31,13 @@ html {
   --color-secundary: #23a900;
 }
 
-
-.page{
+.page {
   width: 100%;
   height: auto;
   z-index: 0;
 }
 
-
-.page .bu{
+.page .bu {
   position: absolute;
   width: 400px;
   height: 400px;
@@ -48,7 +46,51 @@ html {
   top: 600px;
   left: 40px;
   z-index: 0;
-  background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    linear-gradient(90deg, rgb(41, 27, 158), rgb(249, 77, 212));
   border-radius: 60% 30% 50% 20%;
   -webkit-border-radius: 60% 30% 50% 20%;
   -moz-border-radius: 60% 30% 50% 20%;
@@ -58,9 +100,7 @@ html {
   -webkit-animation: su infinite 10s alternate;
 }
 
-
-
-.page .bu2{
+.page .bu2 {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -69,7 +109,51 @@ html {
   top: 1200px;
   right: 300px;
   z-index: 0;
-  background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      hsla(64, 83%, 54%, 0.05) 0px,
+      hsla(64, 83%, 54%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(64, 83%, 54%, 0.05) 11px,
+      hsla(64, 83%, 54%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    linear-gradient(90deg, rgb(41, 27, 158), rgb(249, 77, 212));
   border-radius: 40% 20% 70% 40%;
   -webkit-border-radius: 40% 20% 70% 40%;
   -moz-border-radius: 40% 20% 70% 40%;
@@ -79,24 +163,18 @@ html {
   -webkit-animation: su infinite 6s alternate;
 }
 
-
-
-
- @keyframes su {
-  to{
+@keyframes su {
+  to {
     border-radius: 40% 50% 60% 40%;
     -webkit-border-radius: 40% 50% 60% 40%;
     -moz-border-radius: 40% 50% 60% 40%;
     -ms-border-radius: 40% 50% 60% 40%;
     -o-border-radius: 40% 50% 60% 40%;
+  }
 }
 
-} 
-
-
 @media only screen and (max-width: 960px) {
-
-  .page .bu{
+  .page .bu {
     position: absolute;
     width: 300px;
     height: 300px;
@@ -105,7 +183,51 @@ html {
     top: 600px;
     left: 0px;
     z-index: 0;
-    background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));
+    background-image: repeating-linear-gradient(
+        45deg,
+        hsla(64, 83%, 54%, 0.05) 0px,
+        hsla(64, 83%, 54%, 0.05) 1px,
+        transparent 1px,
+        transparent 11px,
+        hsla(64, 83%, 54%, 0.05) 11px,
+        hsla(64, 83%, 54%, 0.05) 12px,
+        transparent 12px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        hsla(64, 83%, 54%, 0.05) 0px,
+        hsla(64, 83%, 54%, 0.05) 1px,
+        transparent 1px,
+        transparent 11px,
+        hsla(64, 83%, 54%, 0.05) 11px,
+        hsla(64, 83%, 54%, 0.05) 12px,
+        transparent 12px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        0deg,
+        hsla(64, 83%, 54%, 0.05) 0px,
+        hsla(64, 83%, 54%, 0.05) 1px,
+        transparent 1px,
+        transparent 11px,
+        hsla(64, 83%, 54%, 0.05) 11px,
+        hsla(64, 83%, 54%, 0.05) 12px,
+        transparent 12px,
+        transparent 32px
+      ),
+      repeating-linear-gradient(
+        135deg,
+        hsla(64, 83%, 54%, 0.05) 0px,
+        hsla(64, 83%, 54%, 0.05) 1px,
+        transparent 1px,
+        transparent 11px,
+        hsla(64, 83%, 54%, 0.05) 11px,
+        hsla(64, 83%, 54%, 0.05) 12px,
+        transparent 12px,
+        transparent 32px
+      ),
+      linear-gradient(90deg, rgb(41, 27, 158), rgb(249, 77, 212));
     border-radius: 60% 30% 50% 20%;
     -webkit-border-radius: 60% 30% 50% 20%;
     -moz-border-radius: 60% 30% 50% 20%;
@@ -114,10 +236,8 @@ html {
     animation: su infinite 10s alternate;
     -webkit-animation: su infinite 10s alternate;
   }
-  
-  
-  
-  .page .bu2{
+
+  .page .bu2 {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -126,16 +246,13 @@ html {
     top: 1200px;
     right: 0px;
     z-index: 0;
-    background-image: repeating-linear-gradient(45deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(90deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(0deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),repeating-linear-gradient(135deg, hsla(64,83%,54%,0.05) 0px, hsla(64,83%,54%,0.05) 1px,transparent 1px, transparent 11px,hsla(64,83%,54%,0.05) 11px, hsla(64,83%,54%,0.05) 12px,transparent 12px, transparent 32px),linear-gradient(90deg, rgb(41, 27, 158),rgb(249, 77, 212));
+    background-image: repeating-linear-gradient(        45deg,        hsla(64, 83%, 54%, 0.05) 0px,        hsla(64, 83%, 54%, 0.05) 1px,        transparent 1px,        transparent 11px,        hsla(64, 83%, 54%, 0.05) 11px,        hsla(64, 83%, 54%, 0.05) 12px,        transparent 12px,        transparent 32px      ),      repeating-linear-gradient(        90deg,        hsla(64, 83%, 54%, 0.05) 0px,        hsla(64, 83%, 54%, 0.05) 1px,        transparent 1px,        transparent 11px,        hsla(64, 83%, 54%, 0.05) 11px,        hsla(64, 83%, 54%, 0.05) 12px,        transparent 12px,        transparent 32px      ),      repeating-linear-gradient(        0deg,        hsla(64, 83%, 54%, 0.05) 0px,        hsla(64, 83%, 54%, 0.05) 1px,        transparent 1px,        transparent 11px,        hsla(64, 83%, 54%, 0.05) 11px,        hsla(64, 83%, 54%, 0.05) 12px,        transparent 12px,        transparent 32px      ),      repeating-linear-gradient(        135deg,        hsla(64, 83%, 54%, 0.05) 0px,        hsla(64, 83%, 54%, 0.05) 1px,        transparent 1px,        transparent 11px,        hsla(64, 83%, 54%, 0.05) 11px,        hsla(64, 83%, 54%, 0.05) 12px,        transparent 12px,        transparent 32px      ),      linear-gradient(90deg, rgb(41, 27, 158), rgb(249, 77, 212));
     border-radius: 40% 20% 70% 40%;
     -webkit-border-radius: 40% 20% 70% 40%;
     -moz-border-radius: 40% 20% 70% 40%;
     -ms-border-radius: 40% 20% 70% 40%;
     -o-border-radius: 40% 20% 70% 40%;
-    animation: su infinite 6s alternate;
-    -webkit-animation: su infinite 6s alternate;
-  }
-  
-  
-
+    animation: su infinite 2s alternate;
+    -webkit-animation: su infinite 2s alternate;
+}
 }

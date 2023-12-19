@@ -16,7 +16,7 @@
 
 .list {
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
 .list li {
@@ -34,21 +34,8 @@ a {
   text-decoration: underline;
 }
 
-.list a {
-  padding: 20px;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
-
 .list a:hover {
-  background-color: var(--color-principal);
-}
-
-a.color {
-  background-color: var(--color-principal);
+ border-bottom: 4px solid white;
 }
 
 

@@ -1,20 +1,14 @@
-:root{
---title: 4rem;
---text: 1rem;
+:root {
+  --title: 4rem;
+  --text: 1rem;
 }
-
-
 
 @media only screen and (max-width: 960px) {
-  :root{
+  :root {
     --title: 2rem;
-    --text: .8rem;
-    }
+    --text: 0.8rem;
+  }
 }
-
-
-
-
 
 .about {
   position: relative;
@@ -43,7 +37,7 @@
   padding: 100px;
   gap: 20px;
 }
-.text p{
+.text p {
   font-size: var(--text);
 }
 .info h1 {
@@ -129,72 +123,19 @@
   -webkit-animation: form2 2s forwards;
   z-index: -1;
   left: 0;
-
-  display: no;
 }
+
+
 
 .circle2 {
   position: relative;
   width: 500px;
   height: 500px;
   overflow: hidden;
-  background-image: repeating-linear-gradient(
-      45deg,
-      hsla(64, 83%, 54%, 0.05) 0px,
-      hsla(64, 83%, 54%, 0.05) 1px,
-      transparent 1px,
-      transparent 11px,
-      hsla(64, 83%, 54%, 0.05) 11px,
-      hsla(64, 83%, 54%, 0.05) 12px,
-      transparent 12px,
-      transparent 32px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      hsla(64, 83%, 54%, 0.05) 0px,
-      hsla(64, 83%, 54%, 0.05) 1px,
-      transparent 1px,
-      transparent 11px,
-      hsla(64, 83%, 54%, 0.05) 11px,
-      hsla(64, 83%, 54%, 0.05) 12px,
-      transparent 12px,
-      transparent 32px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      hsla(64, 83%, 54%, 0.05) 0px,
-      hsla(64, 83%, 54%, 0.05) 1px,
-      transparent 1px,
-      transparent 11px,
-      hsla(64, 83%, 54%, 0.05) 11px,
-      hsla(64, 83%, 54%, 0.05) 12px,
-      transparent 12px,
-      transparent 32px
-    ),
-    repeating-linear-gradient(
-      135deg,
-      hsla(64, 83%, 54%, 0.05) 0px,
-      hsla(64, 83%, 54%, 0.05) 1px,
-      transparent 1px,
-      transparent 11px,
-      hsla(64, 83%, 54%, 0.05) 11px,
-      hsla(64, 83%, 54%, 0.05) 12px,
-      transparent 12px,
-      transparent 32px
-    ),
-    linear-gradient(90deg, rgb(41, 27, 158), rgb(249, 77, 212));
-  animation: form 2s forwards;
-  -webkit-animation: form 2s forwards;
-}
-
-.circle2 img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.circle2:hover {
-  animation: che infinite 4s alternate;
-  -webkit-animation: che infinite 4s alternate;
+  background: rgb(255,7,220);
+  background: linear-gradient(90deg, rgba(255,7,220,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+  animation: form 4s infinite alternate-reverse;
+  -webkit-animation: form 4s infinite alternate-reverse;
 }
 
 .picture {
@@ -212,7 +153,6 @@
     -ms-border-radius: 60% 30% 50% 20%;
     -o-border-radius: 60% 30% 50% 20%;
   }
-
   to {
     border-radius: 20% 40% 40% 60%;
     -webkit-border-radius: 20% 40% 40% 60%;
@@ -221,6 +161,10 @@
     -o-border-radius: 20% 40% 40% 60%;
   }
 }
+
+
+
+
 
 @keyframes form2 {
   from {
@@ -240,23 +184,6 @@
   }
 }
 
-@keyframes che {
-  from {
-    border-radius: 20% 60% 30% 60%;
-    -webkit-border-radius: 20% 60% 30% 60%;
-    -moz-border-radius: 20% 60% 30% 60%;
-    -ms-border-radius: 20% 60% 30% 60%;
-    -o-border-radius: 20% 60% 30% 60%;
-  }
-
-  to {
-    border-radius: 40% 20% 70% 30%;
-    -webkit-border-radius: 40% 20% 70% 30%;
-    -moz-border-radius: 40% 20% 70% 30%;
-    -ms-border-radius: 40% 20% 70% 30%;
-    -o-border-radius: 40% 20% 70% 30%;
-  }
-}
 
 /* Responsive */
 
@@ -290,12 +217,9 @@
     gap: 20px;
   }
 
-  .btn{
+  .btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-
-
 }

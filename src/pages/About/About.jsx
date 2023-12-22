@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import Me from "../../assets/Me.png"
+import Photo from "../../assets/Me.png"
 
 function About() {
     return (
@@ -15,11 +15,58 @@ function About() {
                 </div>
             </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <section className='picture'>
                 <div className='circle2'>
-                    <img src={Me} alt="" />
+                    <img src={ Photo} alt="" />
                 </div>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
     )
 }

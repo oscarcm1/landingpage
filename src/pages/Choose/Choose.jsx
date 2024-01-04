@@ -4,9 +4,7 @@ import "./choose.css"
 function Choose() {
     return (
         <div className='choose'>
-
             <h1>¿Por qué Elegirnos?</h1>
-
             <section className='box-choose'> 
                     <article>
                         <h2> Enfoque Personalizado:</h2>
@@ -21,8 +19,6 @@ function Choose() {
                         <p>Contamos con un equipo diverso de expertos en marketing digital, diseño, desarrollo web y más. Estamos listos para enfrentar cualquier desafío.</p>
                     </article>
             </section>
-
-
         </div>
     )
 }

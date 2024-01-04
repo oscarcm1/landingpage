@@ -3,7 +3,6 @@ import "./navbar.css"
 
 function Navbar() {
     return (
-
         <nav className='menu'>
             <h1>Logo</h1>
             <ul className='list'>
@@ -14,8 +13,6 @@ function Navbar() {
                 <li><a href="" className='color'>Get Started</a></li>
             </ul>
         </nav>
-
-
     )
 }
 

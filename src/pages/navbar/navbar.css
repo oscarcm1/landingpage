@@ -51,10 +51,8 @@ a.color {
   background-color: var(--color-principal);
 }
 
-
-
 @media only screen and (max-width: 960px) {
-.menu{
-  display: none;
-}
+  .menu {
+    display: none;
+  }
 }

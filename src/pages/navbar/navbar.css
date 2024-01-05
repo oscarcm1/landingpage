@@ -20,14 +20,10 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  background-image: url("../../assets/bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -36,6 +32,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0px 80px;
+  z-index: 100;
 }
 
 ul.items {
@@ -219,18 +216,17 @@ span.icon:last-child {
   position: relative;
   width: 100%;
   height: auto;
-  background-color: #000000;
+  background-color: #00000057;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  backdrop-filter: blur(5px);
 }
 
 .gallery.bg {
-  background-color: rgba(132, 0, 255, 0.289);
-  background-image: url("../../assets/bg2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgba(132, 0, 255, 0);
+  backdrop-filter: blur(0px);
 }
 
 .picture {
@@ -265,11 +261,12 @@ span.icon:last-child {
 .count {
   position: relative;
   width: 100%;
-  background-color: #000000;
+  background-color: #0000005d;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 200px;
+  backdrop-filter: blur(5px);
 }
 .count p {
   color: var(--color-text);
@@ -287,14 +284,9 @@ p.number {
   position: relative;
   width: 100%;
   height: 500px;
-  background-image: url("../../assets/bg3.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3a315ce8;
 }
 
 .card-contact {
@@ -364,4 +356,18 @@ article:hover{
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+}
+
+
+.video{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.video video{
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
 }

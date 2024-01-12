@@ -24,22 +24,20 @@ function App() {
 
     console.log(respuestaCorrecta);
     console.log(respuestaSeleccionada);
+    if (respuestaSeleccionada != null) {
+      if (respuestaCorrecta === respuestaSeleccionada) {
+        console.log(`Pregunta ${preguntaIndex + 1}: Correcta`);
+        // document.querySelector(".format" ).classList.toggle("success");
+        document.querySelector(active).classList.toggle("success");
+      } else {
+        console.log(`Pregunta ${preguntaIndex + 1}: Incorrecta`);
+        // document.querySelector(".format").classList.toggle("error");
+        document.querySelector(active).classList.toggle("error");
+      }
 
-    if (respuestaCorrecta === respuestaSeleccionada) {
-      console.log(`Pregunta ${preguntaIndex + 1}: Correcta`);
-      // document.querySelector(".format" ).classList.toggle("success");
+    };
+  }
 
-      document.querySelector(active).classList.toggle("success");
-
-
-
-    } else {
-      console.log(`Pregunta ${preguntaIndex + 1}: Incorrecta`);
-      // document.querySelector(".format").classList.toggle("error");
-      document.querySelector(active).classList.toggle("error");
-    }
-
-  };
 
   return (
     <div className='container'>

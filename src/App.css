@@ -24,6 +24,10 @@ html {
   position: relative;
   width: 100%;
   font-family: MSI;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card {
@@ -34,38 +38,36 @@ html {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 10px;
+  padding: 50px;
   flex-wrap: wrap;
-
-
 }
 
 .format {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
-   gap: 20px;
-   width: calc(50% - 50px);
-   height: 200px;
-   background-color: rgb(255, 255, 255);
-   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-   border-radius: 10px;
-   padding: 20px;
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   -ms-border-radius: 10px;
-   -o-border-radius: 10px;
-   scale: .9;
-   transition: 1s;
-   -webkit-transition: 1s;
-   -moz-transition: 1s;
-   -ms-transition: 1s;
-   -o-transition: 1s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: calc(50% - 50px);
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  scale: 0.9;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
- 
- .format:hover{
+
+.format:hover {
   scale: 1;
   transition: 1s;
   -webkit-transition: 1s;
@@ -73,18 +75,17 @@ html {
   -ms-transition: 1s;
   -o-transition: 1s;
 }
- .ask p {
-   font-weight: bold;
- }
- 
+.ask p {
+  font-weight: bold;
+}
 
-.btn{
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn button{
+.btn button {
   border: none;
   padding: 10px 30px;
   background-color: rgb(39, 206, 39);
@@ -95,26 +96,22 @@ html {
   -o-border-radius: 10px;
   color: white;
   cursor: pointer;
-
-  
 }
 
-.checkbox{
+.checkbox {
   display: flex;
   flex-direction: column;
-  gap:10;
+  gap: 10;
 }
 
-
-
-.format.success{
-  background-color: rgba(108, 223, 108, 0.568);
+.format.success {
+  border: 4px solid rgb(22, 196, 22);
 }
 
-.format.error{
-  background-color: rgba(255, 117, 117, 0.596);
+.format.error {
+  border: 4px solid red;
 }
 
-.answer.success{
+.answer.success {
   background-color: black;
 }

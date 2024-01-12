@@ -43,6 +43,7 @@ function App() {
 
   return (
     <div className='container'>
+      <h1>Sistema de Preguntas y Respuestas con Json</h1>
       <div className='card'>
         {Data.map((pregunta, index) => (
           <div className='format' key={index}>
@@ -86,7 +87,7 @@ function App() {
               ))}
             </div>
             <div className='btn'>
-              <button onClick={() => Validar(index)}>Checar</button>
+              <button onClick={() => Validar(index)}>Revisar</button>
             </div>
           </div>
         ))}

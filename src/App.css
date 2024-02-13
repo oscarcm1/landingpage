@@ -16,58 +16,206 @@ html {
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.time {
+.menu {
   width: 100%;
-  height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-  font-family: clock;
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+.menu ul {
+  display: flex;
   gap: 20px;
-  font-size: 4rem;
-  color: whitesmoke;
+  list-style: none;
 }
 
-.time p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: rgb(227, 227, 252);
-}
-.time h2 {
-  text-shadow: 0 0 7px #ffffff5d, 0 0 10px #ffffff5e, 0 0 21px #ffffff88,
-    0 0 42px rgba(237, 241, 240, 0.144), 0 0 151px rgba(248, 250, 249, 0.13);
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
 }
 
-.background {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  background-color: #fffffffd;
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  background-image: url("./assets/bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.box {
-  position: relative;
-  display: flex;
+a.color {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  width: 300px;
-  height: 200px;
-  background-image: url("./assets/clock.svg");
+  border: 1px solid purple;
+  color: purple;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
   display: flex;
+  min-height: 500px;
   justify-content: center;
   align-items: center;
+}
+
+.slider h2 {
+  color: blueviolet;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slider article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px;
+  text-wrap: balance;
+}
+
+.scores {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.scores article {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.116);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.scores article:nth-child(1),
+.scores article:nth-child(3) {
+  background-color: rgba(153, 0, 255, 0.171);
+}
+
+.scores article:nth-child(2),
+.scores article:nth-child(4) {
+  background-color: rgba(255, 145, 0, 0.473);
+}
+
+.travel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.travel h2 {
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.travel article {
+  display: flex;
+  min-height: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.travel img {
+  width: 200px;
+}
+.travel .info {
+  width: 50%;
+}
+
+.team {
+  background-color: rgb(58, 58, 58);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  gap: 20px;
+  color: white;
+}
+
+.team h3 {
+  font-size: 2rem;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.team-pictures {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  background-size: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  min-height: 300px;
+}
+
+.contact h3 {
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer p {
+  font-weight: bold;
+}
+
+.footer a {
+  font-size: 12px;
 }

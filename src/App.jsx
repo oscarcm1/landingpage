@@ -1,5 +1,6 @@
 
 import './App.css'
+import "./Animaciones.css"
 import Page from './Page'
 
 function App() {

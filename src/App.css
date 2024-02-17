@@ -25,280 +25,100 @@ html {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  color: var(--color-principal);
-  padding: 0px 80px;
-}
 
-a {
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-}
-button {
-  cursor: pointer;
-}
 
-a.color {
-  border-radius: 10px 0px 20px 0px;
-  -webkit-border-radius: 10px 0px 20px 0px;
-  -moz-border-radius: 10px 0px 20px 0px;
-  -ms-border-radius: 10px 0px 20px 0px;
-  -o-border-radius: 10px 0px 20px 0px;
-  background-color: var(--color-principal);
-  color: white;
-}
-img {
+
+
+
+
+.slider-container {
+  position: relative;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+
 }
 
 .slider {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: transform 0.5s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.slide {
+  display: flex;
+  flex: 0 0 100%;
+  width: 100%;
   height: 500px;
-  min-height: 500px;
-  padding: 0px 40px;
 }
 
-.slider article {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 80px;
-}
-
-.slider h2 {
-  color: var(--color-secundary);
-  font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.slider h3 {
-  font-size: 4rem;
-}
-
-.slider h4 {
-  font-size: 2rem;
-  font-weight: 100;
-}
-
-.slider p {
-  font-size: 1rem;
-}
-
-.slider a {
-  width: 100px;
-  min-width: 100px;
-}
-
-.box-product {
+.controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  padding: 40px 80px;
-  background-color: rgba(255, 192, 203, 0.2);
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
-.box-product article {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  padding: 40px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.11);
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  gap: 20px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-}
-
-.box-product p {
-  color: rgb(63, 62, 62);
-}
-
-.box-product img {
-  width: 100px;
-  height: 100px;
+.controls button{
+  border: none;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
-
-.cakes {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.cakes h2 {
-  display: flex;
-  justify-content: center;
-  padding: 40px 0px;
-  color: var(--color-secundary);
-  font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.list-cakes {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 0px 80px;
-  
-}
-.list-cakes article {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
-  gap: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  padding: 20px 0px;
-}
-
-.cakes button {
   background-color: var(--color-principal);
-  border: none;
-  padding: 10px;
   color: white;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  min-width: 200px;
+  cursor: pointer;
 }
 
-.cakes img {
-  width: 200px;
-}
 
-.coffee {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-  padding: 80px;
-}
-
-.coffee h2 {
-  color: var(--color-secundary);
-}
-
-.coffee img {
+.slide article{
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-
-.box-coffee {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-}
-
-.box-coffee article {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-}
+  padding: 0px 80px;
+ 
 
-.box-coffee h3 {
-  color: var(--color-principal);
-  font-size: 2rem;
-}
-.box-coffee h4 {
-  color: var(--color-secundary);
-}
+  > h2{
+    color: var(--color-principal);
+    font-size: 2rem;
+    font-weight: bold;
+  }
 
-.box-coffee p {
-  color: rgb(80, 79, 79);
-}
+  > h3{
+    color: var(--color-secundary);
+    font-size: 3rem;
+  }
+   
+  >h4{
+    font-weight:500;
+    font-size: 1rem;
+  }
 
-.btn {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.btn button {
-  padding: 10px 20px;
-  border: none;
-  min-width: 100px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
-}
-
-.btn button:first-child {
-  background-color: var(--color-secundary);
-  color: rgb(19, 17, 17);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-.btn button:last-child {
-  background-color: var(--color-principal);
-  color: white;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  > button{
+    background-color: var(--color-principal);
+    border: none;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 20px 0px 20px;
+    -webkit-border-radius: 20px 0px 20px;
+    color: white;
+    -moz-border-radius: 20px 0px 20px;
+    -ms-border-radius: 20px 0px 20px;
+    -o-border-radius: 20px 0px 20px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
-.footer{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgba(255, 192, 203, 0.2);
-  padding: 20px;
 }
 
-.footer ul{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.footer h4{
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-}
-
-.footer a{
-  color: rgb(29, 29, 29);
-  font-size: 10px;
-}

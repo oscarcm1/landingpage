@@ -21,14 +21,15 @@ html {
   padding: 0;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
-
-
-
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .slider-container {
@@ -37,22 +38,73 @@ html {
   height: 500px;
   overflow: hidden;
   margin: 0 auto;
-
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    height: 100%;
 }
 
 .slide {
   display: flex;
   flex: 0 0 100%;
   width: 100%;
-  height: 500px;
+  border: 2px solid rgb(17, 194, 46);
+  justify-content: center;
+  align-items: center;
 }
 
+
+
+.slide article {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid black;
+  padding: 0px 100px;
+
+  > h2 {
+    color: var(--color-secundary);
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  > h3 {
+    font-size: 4rem;
+  }
+
+  > h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  > button {
+    background-color: var(--color-principal);
+    border: none;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 20px 0px 20px;
+    -webkit-border-radius: 20px 0px 20px;
+    color: white;
+    -moz-border-radius: 20px 0px 20px;
+    -ms-border-radius: 20px 0px 20px;
+    -o-border-radius: 20px 0px 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .controls {
   position: absolute;
   top: 50%;
@@ -63,7 +115,7 @@ html {
   padding: 0px 20px;
 }
 
-.controls button{
+.controls button {
   border: none;
   width: 40px;
   height: 40px;
@@ -77,48 +129,21 @@ html {
   cursor: pointer;
 }
 
-
-.slide article{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  padding: 0px 80px;
- 
-
-  > h2{
-    color: var(--color-principal);
-    font-size: 2rem;
-    font-weight: bold;
+@media screen and (max-width: 960px) {
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
   }
 
-  > h3{
-    color: var(--color-secundary);
-    font-size: 3rem;
+  .slide {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    border: 1px solid black;
   }
-   
-  >h4{
-    font-weight:500;
-    font-size: 1rem;
-  }
+  .slide article {
+    height: 500px;
 
-  > button{
-    background-color: var(--color-principal);
-    border: none;
-    max-width: 200px;
-    padding: 10px;
-    border-radius: 20px 0px 20px;
-    -webkit-border-radius: 20px 0px 20px;
-    color: white;
-    -moz-border-radius: 20px 0px 20px;
-    -ms-border-radius: 20px 0px 20px;
-    -o-border-radius: 20px 0px 20px;
-    font-weight: bold;
-    cursor: pointer;
+  }
 }
-
-
-}
-

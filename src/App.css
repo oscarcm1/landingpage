@@ -23,14 +23,13 @@ html {
   background-color: rgb(255, 255, 255);
 }
 
-.container{
+.container {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .slider-container {
   position: relative;
@@ -45,19 +44,17 @@ html {
   transition: transform 0.5s ease;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    height: 100%;
+  height: 100%;
 }
 
 .slide {
   display: flex;
   flex: 0 0 100%;
   width: 100%;
-  border: 2px solid rgb(17, 194, 46);
+  border: dashed 1px rgba(8, 226, 26, 0.76);
   justify-content: center;
   align-items: center;
 }
-
-
 
 .slide article {
   width: 100%;
@@ -66,7 +63,7 @@ html {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  border: 2px solid black;
+  border: dashed 1px rgba(0, 0, 0, 0.39);
   padding: 0px 100px;
 
   > h2 {
@@ -144,6 +141,5 @@ html {
   }
   .slide article {
     height: 500px;
-
   }
 }

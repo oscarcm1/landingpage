@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
-export let slides =[
+export let slides = [
     {
         "id": 1,
         "title": "Summer Season",
@@ -37,26 +37,34 @@ export let slides =[
 
 function Page() {
 
-    let currentIndex = 0;
 
-    function prevSlide() {
-        const slides = document.querySelectorAll('.slide');
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlider();
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            goToNextSlide();
+        }, 2000); // Cambiar de slide cada segundo
+
+        return () => clearInterval(intervalId);
+    }, [currentIndex]); // Reiniciar el temporizador cuando cambia currentIndex
+
+    function goToNextSlide() {
+        const nextIndex = (currentIndex + 1) % slides.length;
+        setCurrentIndex(nextIndex);
+        updateSlider(nextIndex);
     }
 
-    function nextSlide() {
-        const slides = document.querySelectorAll('.slide');
-        currentIndex = (currentIndex + 1) % slides.length;
-        updateSlider();
+    function handleButtonClick(index) {
+        setCurrentIndex(index);
+        updateSlider(index);
     }
 
-    function updateSlider() {
+    function updateSlider(index) {
         const slider = document.querySelector('.slider');
-        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        slider.style.transform = `translateX(-${index * 100}%)`;
     }
 
-     setInterval(nextSlide, 3000);
+ 
 
 
 
@@ -64,26 +72,32 @@ function Page() {
         <div className='container'>
             <div className="slider-container">
                 <div className="slider">
-                    {slides.map((key)  =>
-                    <section className="slide" key={key.id}>
-                        <article>
-                            <h2>{key.title}</h2>
-                            <h3>{key.subtitle}</h3>
-                            <h4>{key.product}</h4>
-                            <p>{key.description}</p>
-                            <button>{key.button}</button>
-                        </article>
-                        <article>
-                            <img src={key.img} alt={key.alt} />
-                        </article>
-                    </section>              
-                    ) }
+                    {slides.map((key) =>
+                        <section className="slide" key={key.id}>
+                            <article>
+                                <h2>{key.title}</h2>
+                                <h3>{key.subtitle}</h3>
+                                <h4>{key.product}</h4>
+                                <p>{key.description}</p>
+                                <button>{key.button}</button>
+                            </article>
+                            <article>
+                                <img src={key.img} alt={key.alt} />
+                            </article>
+                        </section>
+                    )}
                 </div>
-                <section className="controls">
-                    <button onClick={prevSlide}><p>{"<"}</p></button>
-                    <button onClick={nextSlide}><p>{">"}</p></button>
-                </section>
             </div>
+            <section className="controls">
+                {slides.map((slide, index) =>
+                    <button
+                        key={slide.id}
+                        onClick={() => handleButtonClick(index)}
+                        style={{ backgroundColor: currentIndex === index ? 'green' : '' }}
+                    >
+                    </button>
+                )}
+            </section>
         </div>
     )
 }
